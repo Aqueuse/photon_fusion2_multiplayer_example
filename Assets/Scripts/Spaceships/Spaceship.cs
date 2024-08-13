@@ -33,19 +33,19 @@ namespace Spaceships {
                 if (rawInputDirection.sqrMagnitude > 0) _forward = rawInputDirection;
 
                 if (HasStateAuthority && delay.ExpiredOrNotRunning(Runner)) {
-                    // if (data.buttons.IsSet(Actions.SHOOT)) {
-                    //     delay = TickTimer.CreateFromSeconds(Runner, 0.5f);
-                    //
-                    //     Runner.Spawn(
-                    //         _prefabBall,
-                    //         transform.position + _forward, 
-                    //         Quaternion.LookRotation(_forward),
-                    //         Object.InputAuthority, 
-                    //         (runner, o) => {
-                    //             // Initialize the Ball before synchronizing it
-                    //             o.GetComponent<Projectile>().Init();
-                    //         });
-                    // }
+                    if (data.buttons.IsSet(Actions.SHOOT)) {
+                        delay = TickTimer.CreateFromSeconds(Runner, 0.5f);
+                    
+                        Runner.Spawn(
+                            _prefabBall,
+                            transform.position + _forward, 
+                            Quaternion.LookRotation(_forward),
+                            Object.InputAuthority, 
+                            (runner, o) => {
+                                // Initialize the Ball before synchronizing it
+                                o.GetComponent<Projectile>().Init();
+                            });
+                    }
                 }
             }
         }

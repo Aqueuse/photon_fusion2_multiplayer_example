@@ -540,7 +540,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   localPlayerCamera: {fileID: 558591882}
-  basicSpawner: {fileID: 1933222997}
 --- !u!4 &240659223
 Transform:
   m_ObjectHideFlags: 0
@@ -3614,9 +3613,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5c98ea5f3dcbbba4187db026402a6cb7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  sessionName: 
   _playerPrefab:
     RawGuidValue: e73da138bc87b2a45abaf8bdb588d46d
-  sessionName: 
   createLobbyInputField: {fileID: 587434863}
   searchLobbyInputField: {fileID: 1033639461}
   shootInputActionReference: {fileID: 7531063728094379920, guid: 08d3e8af6764e7248a60e1114b636038, type: 3}

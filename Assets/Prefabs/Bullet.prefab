@@ -12,9 +12,9 @@ GameObject:
   - component: {fileID: 6393973389660716602}
   - component: {fileID: 8926011919908262587}
   - component: {fileID: 1446623726824176395}
-  - component: {fileID: 1667497815764816008}
   - component: {fileID: 8513693489356881912}
   - component: {fileID: 5762972844600492944}
+  - component: {fileID: -8202278236129950269}
   m_Layer: 0
   m_Name: Bullet
   m_TagString: Untagged
@@ -108,33 +108,6 @@ SphereCollider:
   serializedVersion: 3
   m_Radius: 0.5
   m_Center: {x: 0, y: 0, z: 0}
---- !u!54 &1667497815764816008
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8778558922098517600}
-  serializedVersion: 4
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_CenterOfMass: {x: 0, y: 0, z: 0}
-  m_InertiaTensor: {x: 1, y: 1, z: 1}
-  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ImplicitCom: 1
-  m_ImplicitTensor: 1
-  m_UseGravity: 0
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
 --- !u!114 &8513693489356881912
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -153,6 +126,7 @@ MonoBehaviour:
   NestedObjects: []
   NetworkedBehaviours:
   - {fileID: 5762972844600492944}
+  - {fileID: -8202278236129950269}
 --- !u!114 &5762972844600492944
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -165,3 +139,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6aa34bde65117064c91ace3688377fb9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &-8202278236129950269
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8778558922098517600}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 158639473, guid: e725a070cec140c4caffb81624c8c787, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SyncScale: 0
+  SyncParent: 0
+  _autoAOIOverride: 1
+  DisableSharedModeInterpolation: 0
